@@ -20,10 +20,10 @@ app.use(express.static(path.join(__dirname,'public')))
 app.use(express.static('views/layouts'));
 app.use(express.static('views/layouts.Images')); 
 
-// check logging in development mode
-if(process.env.NODE_ENV == 'development') {
-  app.use(morgan('dev'))
-}
+// // check logging in development mode
+// if(process.env.NODE_ENV == 'development') {
+//   app.use(morgan('dev'))
+// }
 
 // Handlebars 
 app.engine('.hbs',exphbs({ defaultLayout: 'form' ,extname: '.hbs'}))
