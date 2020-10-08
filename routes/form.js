@@ -54,7 +54,7 @@ router.post('/next',(req,res,next) => {
     })
     .catch(error => {
       console.error('Error!', error.message)
-        res.render(error/500);
+        res.render('error/500');
     })
 
 })
